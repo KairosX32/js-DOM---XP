@@ -112,7 +112,7 @@ function Movie(title, director, releaseDate, cast, genre, rating, summary) {
     summary.innerHTML = "<span>Summary: </span>" + m.summary;
   
   
-    card.append(h4, director, releaseDate, cast, genre, rating, summary, button);
+    card.append(h4, director, releaseDate, cast, genre, rating, summary);
   
     div.appendChild(card);
   }
