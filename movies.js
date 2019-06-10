@@ -59,7 +59,7 @@ function Movie(title, director, releaseDate, cast, genre, rating, summary) {
   );
   // console.table([movie1, movie2, movie3, movie4]);
   
-  let movies = [movie1, movie2, movie3, movie4];
+  const movies = [movie1, movie2, movie3, movie4];
   
   const title = document.querySelector("#title");
   const director = document.querySelector(".director");
@@ -111,11 +111,6 @@ function Movie(title, director, releaseDate, cast, genre, rating, summary) {
     summary.className = "summary info-item";
     summary.innerHTML = "<span>Summary: </span>" + m.summary;
   
-    let button = document.createElement('button');
-    button.setAttribute('value', '"Change Text"');
-    button.addEventListener('click', () => {
-      h4.innerHTML = 'FUCK!';
-    })
   
     card.append(h4, director, releaseDate, cast, genre, rating, summary, button);
   
